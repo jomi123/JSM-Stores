@@ -1,0 +1,63 @@
+,
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Login</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div
+      class="d-flex p-2 align-items-center justify-content-center form-group justify-content-center vh-100"
+    >
+      <form action="login.php" method="POST" class="bg-info p-5 m-2">
+        <h4 style="color: darkorchid">Login</h4>
+        <br />
+        <label for="loginuserid">Username</label>  
+
+        <input
+          type="text"
+          name="loginuser"
+          id="loginuserid"       
+          class="form-control"
+          required
+        />
+        <label for="loginpass">Password</label>
+        <input
+          type="password"
+          class="form-control"
+          id="loginpass"
+          name="loginpassword"
+          required
+        />
+
+        <input type="checkbox" onclick="show()" />Show Password
+        <br> <br>
+
+        <div class="text-center">
+          <input
+            type="submit"
+            style="border-radius: 5px; border: blueviolet; margin: 5px"
+            class="btn btn-sm btn-secondary"
+          />
+        </div>
+      </form>
+    </div>
+
+    <script>
+       function show() {
+          var p = document.getElementById("loginpass");
+          if (p.type === "password") {
+            p.type = "text";
+          } else {
+            p.type = "password";
+          }
+        }
+    </script>
+  </body>
+</html>
+

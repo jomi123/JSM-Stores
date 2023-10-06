@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        #popup {
+            width: 400px;
+            height: 100px;
+            text-align: center;
+            background-color: cadetblue;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: fadein 2s;
+        }
+
+        @keyframes fadein {
+            from {
+                opacity: 0
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        
+    </style>
+
+    
+   
+</head>
+<body>
+    <div id="popup" class="w3-animate-zoom">
+        <h3 style="text-align: center;">The Order will be delivered within 2 days</h3>
+        <a href="thankyou.php"><button onclick="this.parentNode.style.display='none'" ;>Ok</button></a>
+        
+    </div>
+
+</body>
+</html>
